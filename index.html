@@ -55,6 +55,8 @@
         }
         .partner-logos {
             display: inline-flex;
+            flex-shrink: 0; /* Impede que o container dos logos encolha */
+            align-items: center; /* Alinha os logos verticalmente para consistência */
             animation: scroll 40s linear infinite;
         }
         @keyframes scroll {
@@ -206,32 +208,32 @@
                 </div>
                 <div class="relative w-full overflow-hidden">
                     <div class="flex whitespace-nowrap">
-                        <div class="partner-logos">
+                        <div class="partner-logos min-w-full justify-around">
                             <!-- Logos will be duplicated by CSS animation -->
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sanvitron.jpg?raw=true" alt="Logo Sanvitron" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/pelzer.png?raw=true" alt="Logo Pelzer" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autocon.png?raw=true" alt="Logo Autocon" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/farmaconde.png?raw=true" alt="Logo Farma Conde" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sandvik.png?raw=true" alt="Logo Sandvik" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/anhanguera.jpeg?raw=true" alt="Logo Anhanguera" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autometal.png?raw=true" alt="Logo Autometal" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://placehold.co/200x80/FFFFFF/000000?text=Coelte" alt="Logo Coelte" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/grupogps.png?raw=true" alt="Logo Grupo GPS" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/santacasasaude.png?raw=true" alt="Logo Santa Casa" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autoliv.png?raw=true" alt="Logo Autoliv" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sanvitron.png?raw=true" alt="Logo Sanvitron" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/pelzer.png?raw=true" alt="Logo Pelzer" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autocon.png?raw=true" alt="Logo Autocon" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/farmaconde.png?raw=true" alt="Logo Farma Conde" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sandvik.png?raw=true" alt="Logo Sandvik" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/anhanguera.png?raw=true" alt="Logo Anhanguera" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autometal.png?raw=true" alt="Logo Autometal" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://placehold.co/200x80/FFFFFF/000000?text=Coelte" alt="Logo Coelte" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/grupogps.png?raw=true" alt="Logo Grupo GPS" class="h-16 mx-8 transition-all duration-300">
+                             <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/santacasasaude.png?raw=true" alt="Logo Santa Casa" class="h-16 mx-8 transition-all duration-300">
+                             <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autoliv.png?raw=true" alt="Logo Autoliv" class="h-16 mx-8 transition-all duration-300">
                         </div>
-                        <div class="partner-logos" aria-hidden="true">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sanvitron.jpg?raw=true" alt="Logo Sanvitron" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/pelzer.png?raw=true" alt="Logo Pelzer" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autocon.png?raw=true" alt="Logo Autocon" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/farmaconde.png?raw=true" alt="Logo Farma Conde" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sandvik.png?raw=true" alt="Logo Sandvik" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/anhanguera.jpeg?raw=true" alt="Logo Anhanguera" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autometal.png?raw=true" alt="Logo Autometal" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://placehold.co/200x80/FFFFFF/000000?text=Coelte" alt="Logo Coelte" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/grupogps.png?raw=true" alt="Logo Grupo GPS" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/santacasasaude.png?raw=true" alt="Logo Santa Casa" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
-                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autoliv.png?raw=true" alt="Logo Autoliv" class="h-16 mx-8 filter grayscale hover:filter-none transition-all duration-300">
+                        <div class="partner-logos min-w-full justify-around" aria-hidden="true">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sanvitron.png?raw=true" alt="Logo Sanvitron" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/pelzer.png?raw=true" alt="Logo Pelzer" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autocon.png?raw=true" alt="Logo Autocon" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/farmaconde.png?raw=true" alt="Logo Farma Conde" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/sandvik.png?raw=true" alt="Logo Sandvik" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/anhanguera.png?raw=true" alt="Logo Anhanguera" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autometal.png?raw=true" alt="Logo Autometal" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://placehold.co/200x80/FFFFFF/000000?text=Coelte" alt="Logo Coelte" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/grupogps.png?raw=true" alt="Logo Grupo GPS" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/santacasasaude.png?raw=true" alt="Logo Santa Casa" class="h-16 mx-8 transition-all duration-300">
+                            <img src="https://github.com/cesaraugustopolarys/polaryssolu-es/blob/main/autoliv.png?raw=true" alt="Logo Autoliv" class="h-16 mx-8 transition-all duration-300">
                         </div>
                     </div>
                 </div>
@@ -348,3 +350,6 @@
 
 </body>
 </html>
+
+
+
